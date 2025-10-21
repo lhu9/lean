@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: 0px solid blue;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(130deg, rgb(0, 0, 0), rgb(17, 17, 17), rgb(26, 26, 26));
+}
+
+.flipbook {
+    width: 1000px;
+    height: 400px;
+
+
+}
+
+.flipbook .hard {
+    width: 10%;
+    background: #000005 !important;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    box-shadow: 3px 3px 4px 15px #df0000;
+}
+
+.flipbook .hard small {
+    font-style: italic;
+    font-weight: lighter;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.flipbook .page {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    border: 1px solid rgb(53, 53, 53);
+}
+
+.page img {
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+}
+
+.flipbook .page small {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.creen-btn {
+    background-color: rgb(71, 71, 71);
+    padding: 5px 10px;
+    font-size: 10px;
+    color: #fff;
+    border: none;
+    margin-top: 100px;
+    border-radius: 1px ;
+}
+@media screen and (max-width: 650px) {
+
+
+    .flipbook {
+        width: 80%;
+        height: 200px;
+    }
+
+    small {
+        font-size: 10px;
+    }
+   .creen-btn {
+    background-color: red;
+    margin-top: 5px;
+    }
+
+}
+
